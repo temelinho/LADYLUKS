@@ -2692,7 +2692,7 @@ select {
   .spa-hero-title { font-size: clamp(3.4rem, 12.7vw, 5.4rem); letter-spacing: -1px; margin-bottom: 22px; }
   .spa-hero-kicker { font-size: 1.4rem; max-width: 340px; }
   .spa-hero-description { font-size: .8rem; margin-bottom: 23px; max-width: 370px; }
-  .spa-hero-actions { gap: 12px 19px; }
+  .spa-hero-actions { gap: 12px 19px; padding-top: clamp(56px, 18vw, 84px); }
   .spa-hero-actions a { font-size: .72rem; min-height: 48px; }
   .spa-hero-book { padding: 12px 15px; gap: 8px; }
   .spa-hero-location { margin-top: 25px; padding-top: 18px; font-size: .64rem; }
