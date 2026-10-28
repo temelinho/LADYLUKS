@@ -47,32 +47,35 @@ function setupMobileNavigation() {
   const toggle = document.querySelector(".mobile-nav-toggle");
   const navigation = document.getElementById("site-navigation");
   if (!header || !toggle || !navigation) return;
-  const smallScreen = window.matchMedia("(max-width: 768px)");
   header.classList.add("nav-enhanced");
   const utilities = document.createElement("div");
   utilities.className = "mobile-menu-utilities";
   navigation.append(utilities);
   // Move the existing controls so IDs, language state and listeners stay unique.
-  const utilitySlots = [".top-info", ".top-selectors"].map((selector) => {
+  [".top-info", ".top-selectors"].forEach((selector) => {
     const element = document.querySelector(`.top-bar ${selector}`);
-    if (!element) return null;
-    const placeholder = document.createComment("Desktop utility position");
-    element.before(placeholder);
-    return { element, placeholder };
-  }).filter(Boolean);
-  const placeUtilities = () => {
-    utilitySlots.forEach(({ element, placeholder }) => {
-      if (smallScreen.matches) utilities.append(element);
-      else placeholder.after(element);
-    });
-    document.body.classList.add("mobile-nav-ready");
+    if (element) utilities.append(element);
+  });
+  document.body.classList.add("mobile-nav-ready");
+  let scrollUpdatePending = false;
+  const updateHeader = () => {
+    header.classList.toggle("is-scrolled", window.scrollY > 24);
+    scrollUpdatePending = false;
   };
+  window.addEventListener("scroll", () => {
+    if (scrollUpdatePending) return;
+    scrollUpdatePending = true;
+    window.requestAnimationFrame(updateHeader);
+  }, { passive: true });
+  window.addEventListener("pageshow", updateHeader);
+  updateHeader();
   const closeLanguage = () => {
     document.getElementById("langDropdownMenu")?.classList.remove("show");
     document.getElementById("langDropdownTrigger")?.setAttribute("aria-expanded", "false");
   };
   const setOpen = (open) => {
     navigation.classList.toggle("is-open", open);
+    header.classList.toggle("is-menu-open", open);
     toggle.setAttribute("aria-expanded", String(open));
     const labelKey = open ? "menu_close" : "menu_open";
     toggle.dataset.i18nAria = labelKey;
@@ -106,11 +109,6 @@ function setupMobileNavigation() {
     ?.addEventListener("click", (event) => {
       if (!navigation.contains(event.currentTarget)) setOpen(false);
     });
-  smallScreen.addEventListener("change", () => {
-    setOpen(false);
-    placeUtilities();
-  });
-  placeUtilities();
 }
 
 function setupLanguageSelector() {
