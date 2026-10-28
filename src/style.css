@@ -2598,7 +2598,7 @@ select {
   }
 }
 
-/* Home hero: warm architectural backdrop and a framed spa portrait. */
+/* Home hero: towel-and-candle atmosphere behind the framed spa portrait. */
 .spa-hero {
   position: relative;
   isolation: isolate;
@@ -2611,8 +2611,9 @@ select {
   position: absolute;
   inset: 0;
   z-index: -1;
-  background: linear-gradient(90deg, #100e0b 8%, rgba(16,14,11,.96) 39%, rgba(16,14,11,.76) 100%),
-    url("./images/spa-architecture.webp") center / cover;
+  background: linear-gradient(90deg, rgba(16,14,11,.48), rgba(16,14,11,.32) 55%, rgba(16,14,11,.4)),
+    linear-gradient(0deg, #100e0b, transparent 35%),
+    url("./images/lady-luks-masaj.webp") center / cover;
 }
 .spa-hero-layout {
   display: grid;
@@ -2753,7 +2754,11 @@ select {
   .spa-hero-seal { width: 86px; height: 86px; left: -25px; bottom: 70px; font-size: .46rem; }
 }
 @media (max-width: 680px) {
-  .spa-hero::before { background: linear-gradient(180deg, rgba(16,14,11,.88), #100e0b 85%), url("./images/spa-architecture.webp") center top / auto 650px no-repeat; }
+  .spa-hero::before {
+    background: linear-gradient(90deg, rgba(16,14,11,.7), rgba(16,14,11,.3)),
+      linear-gradient(180deg, rgba(16,14,11,.18), rgba(16,14,11,.22) 370px, #100e0b 760px),
+      url("./images/lady-luks-masaj-mobile.webp") 65% top / auto 760px no-repeat;
+  }
   .spa-hero-layout { grid-template-columns: minmax(0, 1fr); gap: 38px; padding: 38px 24px 29px; }
   .spa-hero-copy { padding: 0; }
   .spa-hero-eyebrow { font-size: .58rem; letter-spacing: 2.5px; margin-bottom: 23px; }
