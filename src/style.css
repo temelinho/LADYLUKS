@@ -2692,7 +2692,7 @@ select {
   .spa-hero-title { font-size: clamp(3.4rem, 12.7vw, 5.4rem); letter-spacing: -1px; margin-bottom: 22px; }
   .spa-hero-kicker { font-size: 1.4rem; max-width: 340px; }
   .spa-hero-description { font-size: .8rem; margin-bottom: 23px; max-width: 370px; }
-  .spa-hero-actions { gap: 12px 19px; padding-top: clamp(56px, 18vw, 84px); }
+  .spa-hero-actions { gap: 12px 19px; padding-top: clamp(112px, 32vw, 160px); }
   .spa-hero-actions a { font-size: .72rem; min-height: 48px; }
   .spa-hero-book { padding: 12px 15px; gap: 8px; }
   .spa-hero-location { margin-top: 25px; padding-top: 18px; font-size: .64rem; }
@@ -2704,6 +2704,9 @@ select {
   .spa-hero-visual-caption { padding-top: 23px; font-size: .53rem; letter-spacing: 1.4px; }
   .spa-hero-visual-caption small { font-size: .53rem; }
   .home-services { padding-top: 36px; }
+}
+@media (max-width: 768px) {
+  .features-banner { display: none; }
 }
 @media (prefers-reduced-motion: reduce) {
   .spa-hero-actions a { transition: none; }
