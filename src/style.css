@@ -2677,8 +2677,15 @@ select {
   transition: background .2s ease, color .2s ease, border-color .2s ease;
 }
 .spa-hero-actions svg { width: 17px; height: 17px; flex-shrink: 0; }
-.spa-hero-book { padding: 14px 21px; border: 1px solid #dec58f; background: #d8bc80; color: #19150e; border-radius: 2px; }
-.spa-hero-book:hover { background: #f0d9a8; }
+.spa-hero-book {
+  padding: 14px 21px;
+  border: 1px solid var(--gold-secondary);
+  background: var(--gold-gradient);
+  color: #0c0a08;
+  border-radius: 30px;
+  box-shadow: 0 6px 25px rgba(229, 193, 88, .3);
+}
+.spa-hero-book:hover { box-shadow: 0 10px 35px rgba(229, 193, 88, .5); }
 .spa-hero-explore { padding: 9px 0; color: #e3d6bd; border-bottom: 1px solid #746244; }
 .spa-hero-explore:hover { color: #fff4dd; border-color: #e3d6bd; }
 .spa-hero-actions a:focus-visible { outline: 2px solid #fff0cc; outline-offset: 6px; }
