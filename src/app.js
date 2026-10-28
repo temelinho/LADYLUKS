@@ -551,7 +551,7 @@ function openModal(item) {
   const waMsg = encodeURIComponent(
     `Merhaba Lady Luks Spa Aydın! Kataloğunuzdan şu masaj için bilgi ve randevu talep etmek istiyorum:\n\n*${titleText}*\nAfişteki kampanya fiyatı: ${priceFormatted}\n\nGüncel fiyat ve müsaitlik durumunu öğrenebilir miyim?`,
   );
-  const waUrl = `https://wa.me/905392342268?text=${waMsg}`;
+  const waUrl = `https://wa.me/905431074388?text=${waMsg}`;
 
   let metaHTML = "";
   if (item.duration) {
