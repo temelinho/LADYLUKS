@@ -2787,6 +2787,7 @@ select {
 .mobile-nav-toggle {
   display: none;
 }
+.mobile-menu-utilities { display: none; }
 @media (max-width: 768px) {
   .main-header.nav-enhanced {
     position: relative;
@@ -2884,14 +2885,18 @@ select {
   }
   .integrated-masthead .nav-enhanced .brand-text :is(.sub-title, .badge-text) { display: none; }
   .integrated-masthead .main-header.nav-enhanced .mobile-nav-toggle {
+    position: fixed;
+    top: calc(18px + env(safe-area-inset-top, 0px));
+    right: max(24px, env(safe-area-inset-right, 0px));
+    z-index: 100;
     flex-shrink: 0;
     width: auto;
     min-height: 44px;
-    padding: 10px 0 10px 12px;
+    padding: 10px 12px;
     gap: 0;
-    border: 0;
-    border-radius: 0;
-    background: transparent;
+    border: 1px solid rgba(203, 175, 113, .25);
+    border-radius: 6px;
+    background: rgba(16, 14, 11, .94);
     color: #e3d0a6;
     font-size: .78rem;
     font-weight: 500;
@@ -2904,14 +2909,39 @@ select {
   }
   .integrated-masthead .mobile-nav-toggle[aria-expanded="true"] { color: #fff4dd; }
   .integrated-masthead .main-header.nav-enhanced .page-links {
-    top: calc(100% - 6px);
+    position: fixed;
+    top: calc(70px + env(safe-area-inset-top, 0px));
     left: auto;
-    right: 24px;
+    right: max(24px, env(safe-area-inset-right, 0px));
     width: min(260px, calc(100vw - 48px));
+    max-height: calc(100dvh - 160px - env(safe-area-inset-top, 0px) - env(safe-area-inset-bottom, 0px));
+    overflow-y: auto;
+    overscroll-behavior: contain;
     border-color: rgba(203, 175, 113, .32);
     border-radius: 4px;
     background: #19150f;
   }
+  .mobile-nav-ready .top-bar { display: none; }
+  .mobile-menu-utilities {
+    display: grid;
+    gap: 14px;
+    margin-top: 6px;
+    padding: 18px 6px 6px;
+    border-top: 1px solid var(--border-gold);
+  }
+  .mobile-menu-utilities .top-info { color: var(--text-muted); }
+  .mobile-menu-utilities .top-selectors { align-items: flex-start; flex-wrap: wrap; }
+  .mobile-menu-utilities .header-dropdown-btn,
+  .mobile-menu-utilities .currency-indicator { min-height: 44px; }
+  .mobile-menu-utilities .header-dropdown-menu {
+    position: static;
+    margin-top: 8px;
+    min-width: 140px;
+    box-shadow: none;
+    border-color: var(--border-gold);
+    border-radius: 6px;
+  }
+  .mobile-menu-utilities .dropdown-item { min-height: 44px; }
   .integrated-masthead:has(.nav-enhanced) .spa-hero-layout { padding-top: 104px; }
   .integrated-masthead:has(.nav-enhanced) main > .hero-section:first-child { padding-top: 112px; }
 }

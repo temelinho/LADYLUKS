@@ -49,20 +49,40 @@ function setupMobileNavigation() {
   if (!header || !toggle || !navigation) return;
   const smallScreen = window.matchMedia("(max-width: 768px)");
   header.classList.add("nav-enhanced");
+  const utilities = document.createElement("div");
+  utilities.className = "mobile-menu-utilities";
+  navigation.append(utilities);
+  // Move the existing controls so IDs, language state and listeners stay unique.
+  const utilitySlots = [".top-info", ".top-selectors"].map((selector) => {
+    const element = document.querySelector(`.top-bar ${selector}`);
+    if (!element) return null;
+    const placeholder = document.createComment("Desktop utility position");
+    element.before(placeholder);
+    return { element, placeholder };
+  }).filter(Boolean);
+  const placeUtilities = () => {
+    utilitySlots.forEach(({ element, placeholder }) => {
+      if (smallScreen.matches) utilities.append(element);
+      else placeholder.after(element);
+    });
+    document.body.classList.add("mobile-nav-ready");
+  };
+  const closeLanguage = () => {
+    document.getElementById("langDropdownMenu")?.classList.remove("show");
+    document.getElementById("langDropdownTrigger")?.setAttribute("aria-expanded", "false");
+  };
   const setOpen = (open) => {
     navigation.classList.toggle("is-open", open);
     toggle.setAttribute("aria-expanded", String(open));
     const labelKey = open ? "menu_close" : "menu_open";
     toggle.dataset.i18nAria = labelKey;
     toggle.setAttribute("aria-label", UI_TRANSLATIONS[currentLang][labelKey]);
+    if (!open) closeLanguage();
   };
   toggle.addEventListener("click", () => {
     const open = toggle.getAttribute("aria-expanded") !== "true";
     setOpen(open);
-    document.getElementById("langDropdownMenu")?.classList.remove("show");
-    document
-      .getElementById("langDropdownTrigger")
-      ?.setAttribute("aria-expanded", "false");
+    closeLanguage();
   });
   navigation
     .querySelectorAll("a")
@@ -75,14 +95,22 @@ function setupMobileNavigation() {
       event.key === "Escape" &&
       toggle.getAttribute("aria-expanded") === "true"
     ) {
+      // Escape closes the nested language picker before the main menu.
+      if (document.getElementById("langDropdownMenu")?.classList.contains("show")) return;
       setOpen(false);
       toggle.focus();
     }
   });
   document
     .getElementById("langDropdownTrigger")
-    ?.addEventListener("click", () => setOpen(false));
-  smallScreen.addEventListener("change", () => setOpen(false));
+    ?.addEventListener("click", (event) => {
+      if (!navigation.contains(event.currentTarget)) setOpen(false);
+    });
+  smallScreen.addEventListener("change", () => {
+    setOpen(false);
+    placeUtilities();
+  });
+  placeUtilities();
 }
 
 function setupLanguageSelector() {
