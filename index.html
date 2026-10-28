@@ -1,0 +1,631 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lady Luks Spa Aydın | Masaj, Fiyatlar ve Randevu</title>
+    <meta
+      name="description"
+      content="Lady Luks Spa Aydın’da klasik, medikal, soft ve aromaterapi masajı. Hasanefendi Mahallesi’nde 45 dakikalık masaj seansları, fiyatlar ve randevu."
+    />
+
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Lady Luks Spa Aydın | Masaj, Fiyatlar ve Randevu"
+    />
+    <meta
+      property="og:description"
+      content="Aydın Hasanefendi’de klasik, medikal, soft ve aromaterapi masajı. Kendinize ayıracağınız 45 dakika."
+    />
+    <meta property="og:image" content="./src/images/hamam_massage.webp" />
+
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><polygon points='50,5 95,50 50,95 5,50' fill='%23e5c158'/></svg>"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800;900&family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <link rel="stylesheet" href="./src/style.css?v=12" />
+    <meta property="og:locale" content="tr_TR" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "DaySpa",
+        "@id": "#isletme",
+        "name": "Lady Luks Spa Aydın",
+        "description": "Aydın Hasanefendi Mahallesi'nde klasik, medikal, soft ve aromaterapi masajı.",
+        "telephone": ["+90 539 234 22 68", "+90 543 107 43 88"],
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Hasanefendi Mahallesi, Gençlik Caddesi, ana cadde üzeri, Cumhuriyet İlkokulu karşısı",
+          "addressLocality": "Aydın",
+          "addressRegion": "Aydın",
+          "addressCountry": "TR"
+        },
+        "currenciesAccepted": "TRY",
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "45 dakikalık masaj hizmetleri",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "price": "1500",
+              "priceCurrency": "TRY",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Klasik Masaj",
+                "description": "45 dakikalık klasik masaj seansı."
+              }
+            },
+            {
+              "@type": "Offer",
+              "price": "1800",
+              "priceCurrency": "TRY",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Medikal Masaj",
+                "description": "45 dakikalık medikal masaj seansı."
+              }
+            },
+            {
+              "@type": "Offer",
+              "price": "1700",
+              "priceCurrency": "TRY",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Soft Masaj",
+                "description": "45 dakikalık soft masaj seansı."
+              }
+            },
+            {
+              "@type": "Offer",
+              "price": "2000",
+              "priceCurrency": "TRY",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Aromaterapi Masaj",
+                "description": "45 dakikalık aromaterapi masaj seansı."
+              }
+            }
+          ]
+        }
+      }
+    </script>
+  </head>
+  <body class="home-page integrated-masthead">
+    <div class="top-bar">
+      <div class="container top-bar-content">
+        <div class="top-info">
+          <span class="info-item"
+            ><i data-lucide="map-pin"></i> Hasanefendi, Aydın</span
+          >
+        </div>
+
+        <div class="top-selectors">
+          <div class="header-dropdown-wrap">
+            <button class="header-dropdown-btn" id="langDropdownTrigger">
+              <span id="headerCurrentFlag"
+                ><img
+                  src="./src/images/flags/tr.svg"
+                  width="20"
+                  height="14"
+                  alt=""
+              /></span>
+              <span id="headerCurrentLang">TR</span>
+              <i data-lucide="chevron-down" class="chevron-icon"></i>
+            </button>
+
+            <div class="header-dropdown-menu" id="langDropdownMenu">
+              <button class="dropdown-item active" data-lang="tr">
+                <span class="flag-emoji"
+                  ><img
+                    src="./src/images/flags/tr.svg"
+                    width="20"
+                    height="14"
+                    alt=""
+                /></span>
+                Türkçe
+              </button>
+              <button class="dropdown-item" data-lang="en">
+                <span class="flag-emoji"
+                  ><img
+                    src="./src/images/flags/en.svg"
+                    width="20"
+                    height="14"
+                    alt=""
+                /></span>
+                English
+              </button>
+              <button class="dropdown-item" data-lang="ru">
+                <span class="flag-emoji"
+                  ><img
+                    src="./src/images/flags/ru.svg"
+                    width="20"
+                    height="14"
+                    alt=""
+                /></span>
+                Русский
+              </button>
+              <button class="dropdown-item" data-lang="de">
+                <span class="flag-emoji"
+                  ><img
+                    src="./src/images/flags/de.svg"
+                    width="20"
+                    height="14"
+                    alt=""
+                /></span>
+                Deutsch
+              </button>
+            </div>
+          </div>
+
+          <div class="currency-indicator" aria-label="Türk lirası">
+            <span>₺</span> TRY
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <header class="main-header">
+      <div class="container header-container">
+        <a
+          class="brand brand-home"
+          href="index.html"
+          aria-label="Lady Luks Spa Aydın ana sayfa"
+        >
+          <div class="brand-crest">
+            <svg viewBox="0 0 100 100" class="crest-svg">
+              <polygon
+                points="50,5 95,50 50,95 5,50"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              />
+              <circle
+                cx="50"
+                cy="50"
+                r="30"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-dasharray="4,2"
+              />
+              <polygon
+                points="50,25 75,50 50,75 25,50"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1"
+              />
+              <circle cx="50" cy="50" r="6" fill="currentColor" />
+            </svg>
+          </div>
+          <div class="brand-text">
+            <span class="sub-title" data-i18n="tagline"
+              >MASAJ & SPA • AYDIN HASANEFENDİ</span
+            >
+            <div class="main-title">Lady Luks <span>Spa</span></div>
+            <span class="badge-text" data-i18n="experience"
+              >KENDİNİZE BİR İYİLİK YAPIN</span
+            >
+          </div>
+        </a>
+        <button
+          class="mobile-nav-toggle"
+          type="button"
+          aria-controls="site-navigation"
+          aria-expanded="false"
+          aria-label="Menüyü aç"
+          data-i18n-aria="menu_open"
+        >
+          <span class="mobile-menu-caption"
+            ><svg
+              viewBox="0 0 24 24"
+              width="20"
+              height="20"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.7"
+              stroke-linecap="round"
+              aria-hidden="true"
+            >
+              <path d="M4 6h16M4 12h16M4 18h16" /></svg
+            ><span data-i18n="mobile_menu">Menü</span></span
+          >
+          <svg
+            class="mobile-menu-chevron"
+            viewBox="0 0 24 24"
+            width="18"
+            height="18"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.7"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <path d="m6 9 6 6 6-6" />
+          </svg>
+        </button>
+        <nav class="page-links" id="site-navigation" aria-label="Ana menü">
+          <a href="index.html" aria-current="page" data-i18n="nav_home"
+            >Ana Sayfa</a
+          >
+          <a href="paketler.html" data-i18n="nav_packages">Paketler</a>
+          <a href="tanitim.html" data-i18n="nav_intro">Tanıtım</a>
+          <a href="#iletisim" data-i18n="nav_contact">İletişim</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="spa-hero" aria-labelledby="home-title">
+        <div class="container spa-hero-layout">
+          <div class="spa-hero-copy">
+            <p class="spa-hero-eyebrow"><span aria-hidden="true"></span> LADY LUKS SPA · AYDIN</p>
+            <h1 id="home-title" class="spa-hero-title">
+              <span data-i18n="home_title_lead">Kendinize bir</span>
+              <em data-i18n="home_title_accent">iyilik yapın.</em>
+            </h1>
+            <p class="spa-hero-kicker" data-i18n="home_hero_kicker">Günün telaşından uzak, size ait 45 dakika.</p>
+            <p class="spa-hero-description" data-i18n="home_hero_description">
+              Aydın Hasanefendi’de klasik, medikal, soft ve aromaterapi masajı.
+            </p>
+            <div class="spa-hero-actions">
+              <a class="spa-hero-book" href="https://wa.me/905392342268" target="_blank" rel="noopener noreferrer">
+                <i data-lucide="message-circle" aria-hidden="true"></i>
+                <span data-i18n="home_booking">Randevu & Bilgi</span>
+                <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+              </a>
+              <a class="spa-hero-explore" href="#paketler">
+                <span data-i18n="home_explore">Masajları incele</span>
+                <i data-lucide="arrow-down" aria-hidden="true"></i>
+              </a>
+            </div>
+            <div class="spa-hero-location">
+              <i data-lucide="map-pin" aria-hidden="true"></i>
+              <p><span data-i18n="home_address">Hasanefendi Mahallesi · Gençlik Caddesi</span><br>
+              <span data-i18n="home_landmark">Ana cadde üzeri, Cumhuriyet İlkokulu karşısı</span></p>
+            </div>
+          </div>
+          <figure class="spa-hero-visual">
+            <div class="spa-hero-arch">
+              <img src="./src/images/hamam_massage.webp" alt="" width="1024" height="1024" fetchpriority="high">
+            </div>
+            <div class="spa-hero-seal" aria-hidden="true">
+              <img src="./src/images/lotus.svg" alt="" width="40" height="40">
+              <span>LADY LUKS</span>
+              <span>SPA · AYDIN</span>
+            </div>
+            <figcaption class="spa-hero-visual-caption">
+              <span data-i18n="hero_duration">45 DAKİKA · AYDIN</span>
+              <small data-i18n="image_note">Temsili atmosfer görseli</small>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+      <section class="catalog-section container flowing-catalog home-services" id="paketler" aria-labelledby="home-services-title">
+        <div class="packages-heading">
+          <div class="section-tag">LADY LUKS SPA · AYDIN</div>
+          <h2 id="home-services-title" class="page-section-title" data-i18n="packages_heading">
+            Masaj Paketlerimiz
+          </h2>
+          <p data-i18n="packages_description">
+            Tüm seanslarımız 45 dakika. Size uygun masajı seçin; detayları
+            inceleyin ve randevunuzu planlayın.
+          </p>
+        </div>
+        <div class="catalog-grid" id="catalogGrid">
+          <article class="catalog-card" id="klasik">
+            <div class="card-image-wrap">
+              <img
+                src="./src/images/vip_silver_package.webp"
+                alt="Klasik Masaj için temsili masaj görseli"
+                class="card-image"
+                style="object-position: 50% 58%"
+                loading="lazy"
+              />
+              <div class="card-duration">
+                <i data-lucide="clock"></i><span>45 dakika</span>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Klasik Masaj</h3>
+              <p class="card-desc">
+                Kendinize zaman ayırmanın en klasik hali. Günün temposuna ara
+                vermek ve rahatlatıcı bir masaj deneyimi yaşamak isteyenler
+                için.
+              </p>
+              <div class="card-footer">
+                <span class="card-price">1.500 ₺</span
+                ><a
+                  class="btn-card-detail"
+                  href="https://wa.me/905392342268?text=Merhaba%20Lady%20Luks%20Spa%20Ayd%C4%B1n%2C%20Klasik%20Masaj%20i%C3%A7in%20randevu%20talep%20etmek%20istiyorum."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Bilgi & Randevu <i data-lucide="arrow-right"></i
+                ></a>
+              </div>
+            </div>
+          </article>
+          <article class="catalog-card" id="medikal">
+            <div class="card-image-wrap">
+              <img
+                src="./src/images/vip_gold_package.webp"
+                alt="Medikal Masaj için temsili masaj görseli"
+                class="card-image"
+                style="object-position: 50% 60%"
+                loading="lazy"
+              />
+              <div class="card-duration">
+                <i data-lucide="clock"></i><span>45 dakika</span>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Medikal Masaj</h3>
+              <p class="card-desc">
+                Bölgesel odaklı bir masaj tercih edenler için. Uygulama
+                detaylarını ve size uygunluğunu randevu öncesinde ekibimizle
+                görüşebilirsiniz.
+              </p>
+              <div class="card-footer">
+                <span class="card-price">1.800 ₺</span
+                ><a
+                  class="btn-card-detail"
+                  href="https://wa.me/905392342268?text=Merhaba%20Lady%20Luks%20Spa%20Ayd%C4%B1n%2C%20Medikal%20Masaj%20i%C3%A7in%20randevu%20talep%20etmek%20istiyorum."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Bilgi & Randevu <i data-lucide="arrow-right"></i
+                ></a>
+              </div>
+            </div>
+          </article>
+          <article class="catalog-card" id="soft">
+            <div class="card-image-wrap">
+              <img
+                src="./src/images/vip_luxury_package.webp"
+                alt="Soft Masaj için temsili masaj görseli"
+                class="card-image"
+                style="object-position: 50% 54%"
+                loading="lazy"
+              />
+              <div class="card-duration">
+                <i data-lucide="clock"></i><span>45 dakika</span>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Soft Masaj</h3>
+              <p class="card-desc">
+                Daha hafif, daha yumuşak bir dokunuş. Sakin bir mola vermek ve
+                kendinize nazik bir masaj deneyimi armağan etmek için.
+              </p>
+              <div class="card-footer">
+                <span class="card-price">1.700 ₺</span
+                ><a
+                  class="btn-card-detail"
+                  href="https://wa.me/905392342268?text=Merhaba%20Lady%20Luks%20Spa%20Ayd%C4%B1n%2C%20Soft%20Masaj%20i%C3%A7in%20randevu%20talep%20etmek%20istiyorum."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Bilgi & Randevu <i data-lucide="arrow-right"></i
+                ></a>
+              </div>
+            </div>
+          </article>
+          <article class="catalog-card" id="aromaterapi">
+            <div class="card-image-wrap">
+              <img
+                src="./src/images/hamam_massage.webp"
+                alt="Aromaterapi Masaj için temsili masaj görseli"
+                class="card-image"
+                style="object-position: 50% 65%"
+                loading="lazy"
+              />
+              <div class="card-duration">
+                <i data-lucide="clock"></i><span>45 dakika</span>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Aromaterapi Masaj</h3>
+              <p class="card-desc">
+                Masajın dinlendirici dokunuşuna eşlik eden aromatik yağlar.
+                Kokuların ve sakinliğin buluştuğu, kendinize ait bir zaman.
+              </p>
+              <div class="card-footer">
+                <span class="card-price">2.000 ₺</span
+                ><a
+                  class="btn-card-detail"
+                  href="https://wa.me/905392342268?text=Merhaba%20Lady%20Luks%20Spa%20Ayd%C4%B1n%2C%20Aromaterapi%20Masaj%20i%C3%A7in%20randevu%20talep%20etmek%20istiyorum."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Bilgi & Randevu <i data-lucide="arrow-right"></i
+                ></a>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="empty-state" id="emptyState" style="display: none">
+          <i data-lucide="search-x" class="empty-icon"></i>
+          <h3 data-i18n="empty_title">Aradığınız masaj hizmeti bulunamadı</h3>
+          <p data-i18n="empty_desc">
+            Lütfen arama teriminizi değiştirin veya filtreleri temizleyin.
+          </p>
+          <button
+            class="btn-reset-filter"
+            id="resetFilterBtn"
+            data-i18n="reset_filters"
+          >
+            Filtreleri Temizle
+          </button>
+        </div>
+        <p class="campaign-note" data-i18n="campaign_note">
+          Fiyatlar paylaşılan kampanya afişine aittir. Güncel kampanya ve
+          müsaitlik bilgisi için bizimle iletişime geçebilirsiniz.
+        </p>
+        <p class="image-context" data-i18n="images_note">
+          Görseller temsili atmosfer görselleridir.
+        </p>
+        <div class="all-packages-link">
+          <a class="btn-back-home" href="paketler.html"
+            ><span data-i18n="view_all_packages">Tüm Paketleri İnceleyin</span
+            ><i data-lucide="arrow-right"></i
+          ></a>
+        </div>
+      </section>
+      <section class="features-banner">
+        <div class="container features-grid">
+          <div class="feature-card">
+            <div class="feature-icon"><i data-lucide="user-check"></i></div>
+            <h4 data-i18n="feat1_title">Profesyonel Masözler</h4>
+            <p data-i18n="feat1_desc">
+              Masaj deneyiminize eşlik eden özenli dokunuşlar.
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon"><i data-lucide="user-check"></i></div>
+            <h4 data-i18n="feat2_title">Doğal Yağlar</h4>
+            <p data-i18n="feat2_desc">
+              Masajın rahatlatıcı dokunuşuna eşlik eden doğal yağlar.
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon"><i data-lucide="leaf"></i></div>
+            <h4 data-i18n="feat3_title">Rahatlatıcı Ortam</h4>
+            <p data-i18n="feat3_desc">
+              Günün telaşından uzak, kendinize ayıracağınız bir mola.
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon"><i data-lucide="sparkles"></i></div>
+            <h4 data-i18n="feat4_title">Hijyenik Hizmet</h4>
+            <p data-i18n="feat4_desc">Her masaj seansında temizlik ve özen.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div
+      class="modal-backdrop"
+      id="modalBackdrop"
+      role="dialog"
+      aria-modal="true"
+      aria-hidden="true"
+      aria-label="Masaj hizmeti detayları"
+      inert
+    >
+      <div class="modal-card" id="modalCard">
+        <button
+          class="modal-close"
+          id="modalCloseBtn"
+          data-i18n-aria="close"
+          aria-label="Kapat"
+        >
+          <i data-lucide="x"></i>
+        </button>
+        <div class="modal-content" id="modalContent"></div>
+      </div>
+    </div>
+
+    <footer class="main-footer" id="iletisim">
+      <div class="container footer-content">
+        <div class="footer-brand">
+          <h2 class="footer-logo">Lady Luks <span>Spa</span></h2>
+          <p data-i18n="footer_about">
+            Aydın Hasanefendi’de klasik, medikal, soft ve aromaterapi masajı.
+            Kendinize ayıracağınız 45 dakika için Lady Luks Spa’ya bekliyoruz.
+          </p>
+        </div>
+
+        <div class="footer-contact">
+          <h3 data-i18n="footer_contact_title">İletişim & Konum</h3>
+          <ul>
+            <li>
+              <i data-lucide="map-pin"></i> Hasanefendi Mahallesi, Gençlik
+              Caddesi, ana cadde üzeri, Cumhuriyet İlkokulu karşısı, Aydın
+            </li>
+            <li>
+              <i data-lucide="phone"></i>
+              <a href="tel:+905392342268">0539 234 22 68</a>
+            </li>
+            <li>
+              <i data-lucide="phone"></i>
+              <a href="tel:+905431074388">0543 107 43 88</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h3 data-i18n="contact_actions">Randevu & Yol Tarifi</h3>
+          <ul>
+            <li>
+              <i data-lucide="message-circle"></i>
+              <a
+                href="https://wa.me/905392342268"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-i18n="whatsapp_order"
+                >WhatsApp Randevu & Bilgi</a
+              >
+            </li>
+            <li>
+              <i data-lucide="map-pin"></i>
+              <a
+                href="https://www.google.com/maps/search/?api=1&amp;query=Hasanefendi%20Mahallesi%20Gen%C3%A7lik%20Caddesi%20Cumhuriyet%20%C4%B0lkokulu%20kar%C5%9F%C4%B1s%C4%B1%20Ayd%C4%B1n"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-i18n="map_link"
+                >Google Haritalar’da Yol Tarifi</a
+              >
+            </li>
+          </ul>
+          <p class="qr-sub" data-i18n="qr_sub">
+            Randevunuz, ekibimizin müsaitlik teyidiyle kesinleşir.
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom container">
+        <p>© 2026 Lady Luks Spa Aydın. Tüm Hakları Saklıdır.</p>
+        <div class="social-links">
+          <a href="https://wa.me/905392342268" target="_blank"
+            ><i data-lucide="message-circle"></i
+          ></a>
+          <a href="tel:+905392342268"><i data-lucide="phone"></i></a>
+          <a
+            href="https://www.google.com/maps/search/?api=1&amp;query=Hasanefendi%20Mahallesi%20Gen%C3%A7lik%20Caddesi%20Cumhuriyet%20%C4%B0lkokulu%20kar%C5%9F%C4%B1s%C4%B1%20Ayd%C4%B1n"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Yol tarifi"
+            ><i data-lucide="map-pin"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+
+    <div class="mobile-sticky-bar">
+      <a href="tel:+905392342268" class="mobile-btn call-btn">
+        <i data-lucide="phone"></i>
+        <span data-i18n="call">Ara</span>
+      </a>
+      <a
+        href="https://wa.me/905392342268"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="mobile-btn wa-btn"
+      >
+        <i data-lucide="message-circle"></i>
+        <span data-i18n="whatsapp_order">WhatsApp Randevu & Bilgi</span>
+      </a>
+    </div>
+
+    <script src="./src/data.js?v=9"></script>
+    <script src="./src/app.js?v=9"></script>
+  </body>
+</html>

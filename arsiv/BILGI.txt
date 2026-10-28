@@ -1,0 +1,7 @@
+GÖRSEL ARŞİVİ
+
+Eski sitenin src/images klasöründeki 15 WebP görsel bu klasöre taşındı.
+Dosyalar değiştirilmedi; tamamının içeriği Git'teki asıllarıyla karşılaştırılarak doğrulandı.
+hamam_massage.webp görselinin bir kopyası yeni sitede src/images/masaj-atmosfer.webp adıyla kullanılıyor.
+
+Bu klasör yeni sitenin yayın dosyalarına dahil edilmek zorunda değildir.
