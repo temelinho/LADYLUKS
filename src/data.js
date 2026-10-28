@@ -1,4 +1,4 @@
-/** Lady Luks Spa Aydın — shared content across all three pages. */
+/** Lady Luks Spa Aydın — shared service content and interface translations. */
 const CURRENCY_RATES = {
   TRY: {
     symbol: "₺",
@@ -71,7 +71,7 @@ const UI_TRANSLATIONS = {
     nav_packages: "Paketler",
     nav_contact: "İletişim",
     packages_heading: "Masaj Paketlerimiz",
-    packages_page_title: "Masaj Paketleri ve Fiyatları",
+    packages_page_title: "Aydın Masaj Paketleri ve Fiyatları",
     packages_description:
       "Tüm seanslarımız 45 dakika. Size uygun masajı seçin; detayları inceleyin ve randevunuzu planlayın.",
     view_all_packages: "Tüm Paketleri İnceleyin",

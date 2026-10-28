@@ -1,4 +1,6 @@
 User-agent: *
-Allow: /
-Disallow: /arsiv/
-Disallow: /output/
+Allow: /LADYLUKS/
+Disallow: /LADYLUKS/arsiv/
+Disallow: /LADYLUKS/output/
+
+Sitemap: https://temelinho.github.io/LADYLUKS/sitemap.xml

@@ -4,6 +4,8 @@
 
 const LANGUAGE_FLAGS = { tr: "tr", en: "en", ru: "ru", de: "de" };
 function preferredLanguage() {
+  const contentLanguage = document.body.dataset.contentLanguage;
+  if (Object.hasOwn(LANGUAGE_FLAGS, contentLanguage)) return contentLanguage;
   const fromUrl = new URLSearchParams(window.location.search).get("lang");
   if (Object.hasOwn(LANGUAGE_FLAGS, fromUrl)) return fromUrl;
   try {
@@ -430,7 +432,7 @@ function renderCatalog() {
         ${durationHTML}
       </div>
       <div class="card-body">
-        <h3 class="card-title">${titleText}</h3>
+        <h3 class="card-title"><a href="aydin-masaj-rehberi.html#${item.id}">${titleText}</a></h3>
         <p class="card-desc">${descText}</p>
         <div class="card-footer">
           <span class="card-price">${priceFormatted}</span>
