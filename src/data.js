@@ -384,7 +384,7 @@ const CATALOG_ITEMS = [
     subCategory: "massage",
     priceTRY: 1500,
     duration: 45,
-    image: "./src/images/vip_silver_package.webp",
+    image: "./src/images/vip_silver_package-800.webp",
     title: {
       tr: "Klasik Masaj",
       en: "Classic Massage",
@@ -411,7 +411,7 @@ const CATALOG_ITEMS = [
     subCategory: "massage",
     priceTRY: 1800,
     duration: 45,
-    image: "./src/images/vip_gold_package.webp",
+    image: "./src/images/vip_gold_package-800.webp",
     title: {
       tr: "Medikal Masaj",
       en: "Medical Massage",
@@ -438,7 +438,7 @@ const CATALOG_ITEMS = [
     subCategory: "massage",
     priceTRY: 1700,
     duration: 45,
-    image: "./src/images/vip_luxury_package.webp",
+    image: "./src/images/vip_luxury_package-800.webp",
     title: {
       tr: "Soft Masaj",
       en: "Soft Massage",
@@ -465,7 +465,7 @@ const CATALOG_ITEMS = [
     subCategory: "massage",
     priceTRY: 2000,
     duration: 45,
-    image: "./src/images/hamam_massage.webp",
+    image: "./src/images/hamam_massage-800.webp",
     title: {
       tr: "Aromaterapi Masaj",
       en: "Aromatherapy Massage",

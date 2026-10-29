@@ -34,9 +34,27 @@ document.addEventListener("DOMContentLoaded", () => {
   setupSearch();
   setupSort();
   setupModal();
-  updateLanguageUI();
-  renderCatalog();
+  if (currentLang === "tr") {
+    setupStaticCatalogInteractions();
+  } else {
+    updateLanguageUI();
+    renderCatalog();
+  }
 });
+
+function setupStaticCatalogInteractions() {
+  const grid = document.getElementById("catalogGrid");
+  if (!grid) return;
+  grid.querySelectorAll(".catalog-card .btn-card-detail").forEach((trigger) => {
+    const itemId = trigger.closest(".catalog-card")?.id;
+    const item = CATALOG_ITEMS.find((entry) => entry.id === itemId);
+    if (!item) return;
+    trigger.addEventListener("click", (event) => {
+      event.preventDefault();
+      openModal(item);
+    });
+  });
+}
 
 /* ==========================================
    LANGUAGE & CURRENCY CONTROLLERS
@@ -453,7 +471,7 @@ function renderCatalog() {
 
     card.innerHTML = `
       <div class="card-image-wrap">
-        <img src="${item.image}" alt="${titleText} — ${dict.image_note}" class="card-image" style="object-position: ${item.imagePosition || "50% 50%"}" loading="lazy" decoding="async" onerror="this.onerror=null; this.src='./src/images/hamam_massage.webp';" />
+        <img src="${item.image}" srcset="${item.image.replace("-800.webp", "-480.webp")} 480w, ${item.image} 800w" sizes="(max-width: 680px) calc(100vw - 40px), 560px" alt="${titleText} — ${dict.image_note}" class="card-image" style="object-position: ${item.imagePosition || "50% 50%"}" loading="lazy" decoding="async" onerror="this.onerror=null; this.removeAttribute('srcset'); this.src='./src/images/hamam_massage-800.webp';" />
         ${item.badge ? `<span class="card-badge">${item.badge}</span>` : ""}
         ${durationHTML}
       </div>
@@ -583,7 +601,7 @@ function openModal(item) {
 
   content.innerHTML = `
     <div class="modal-img-wrapper">
-      <img src="${item.image}" alt="${titleText} — ${dict.image_note}" style="object-position: ${item.imagePosition || "50% 50%"}" onerror="this.onerror=null; this.src='./src/images/hamam_massage.webp';" />
+      <img src="${item.image}" alt="${titleText} — ${dict.image_note}" style="object-position: ${item.imagePosition || "50% 50%"}" onerror="this.onerror=null; this.src='./src/images/hamam_massage-800.webp';" />
     </div>
     <div class="modal-inner">
       <div class="modal-header-info">
