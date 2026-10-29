@@ -8,9 +8,9 @@ const CURRENCY_RATES = {
 };
 const UI_TRANSLATIONS = {
   tr: {
-    home_title_lead: "Kendinize bir",
-    home_title_accent: "iyilik yapın.",
-    home_hero_note: "Bedeninize huzur, kendinize zaman.",
+    home_title_lead: "Aydın’da masaj",
+    home_title_accent: "ve spa deneyimi.",
+    home_hero_note: "Özenli hizmet, erişilebilir fiyatlarla.",
     home_hero_kicker: "Günün telaşından uzak, size ait 45 dakika.",
     home_hero_description: "Aydın Hasanefendi’de klasik, medikal, soft ve aromaterapi masajı.",
     home_booking: "Randevu & Bilgi",
@@ -101,9 +101,9 @@ const UI_TRANSLATIONS = {
     menu_close: "Menüyü kapat",
   },
   en: {
-    home_title_lead: "Take a moment",
-    home_title_accent: "for yourself.",
-    home_hero_note: "Peace for your body, time for yourself.",
+    home_title_lead: "Massage & spa",
+    home_title_accent: "in Aydın.",
+    home_hero_note: "Attentive service at accessible prices.",
     home_hero_kicker: "45 minutes away from the rush of your day.",
     home_hero_description: "Classic, medical, soft and aromatherapy massage in Hasanefendi, Aydın.",
     home_booking: "Booking & Information",
@@ -193,9 +193,9 @@ const UI_TRANSLATIONS = {
     menu_close: "Close menu",
   },
   ru: {
-    home_title_lead: "Подарите себе",
-    home_title_accent: "заботу.",
-    home_hero_note: "Покой для тела, время для себя.",
+    home_title_lead: "Массаж и спа",
+    home_title_accent: "в Айдыне.",
+    home_hero_note: "Заботливый сервис по доступным ценам.",
     home_hero_kicker: "45 минут для себя, вдали от повседневной суеты.",
     home_hero_description: "Классический, медицинский, мягкий и ароматерапевтический массаж в Hasanefendi, Айдын.",
     home_booking: "Запись и информация",
@@ -284,9 +284,9 @@ const UI_TRANSLATIONS = {
     menu_close: "Закрыть меню",
   },
   de: {
-    home_title_lead: "Tun Sie sich",
-    home_title_accent: "etwas Gutes.",
-    home_hero_note: "Ruhe für den Körper, Zeit für sich.",
+    home_title_lead: "Massage & Spa",
+    home_title_accent: "in Aydın.",
+    home_hero_note: "Aufmerksamer Service zu erschwinglichen Preisen.",
     home_hero_kicker: "45 Minuten für Sie, fernab vom Alltag.",
     home_hero_description: "Klassische, medizinische, sanfte und Aromatherapie-Massage in Hasanefendi, Aydın.",
     home_booking: "Termin & Information",

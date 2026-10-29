@@ -2705,7 +2705,7 @@ select {
   }
   .spa-hero-eyebrow { font-size: .58rem; letter-spacing: 2.5px; margin-bottom: 23px; }
   .spa-hero-eyebrow > span { width: 25px; }
-  .spa-hero-title { font-size: clamp(3.4rem, 12.7vw, 5.4rem); letter-spacing: -1px; margin-bottom: 22px; }
+  .spa-hero-title { font-size: clamp(2.6rem, 12.7vw, 5.4rem); letter-spacing: -1px; margin-bottom: 22px; }
   .spa-hero-kicker { font-size: 1.4rem; max-width: 340px; }
   .spa-hero-description { font-size: .8rem; margin-bottom: 23px; max-width: 370px; }
   .spa-hero-note { display: flex; align-items: center; flex: 1; max-width: 200px; margin: 0; padding-block: 16px; font-size: 1.35rem; }
