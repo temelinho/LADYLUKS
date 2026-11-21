@@ -238,6 +238,11 @@ function updateLanguageUI() {
     }
   });
 
+  document.querySelectorAll("[data-i18n-alt]").forEach((img) => {
+    const value = dict[img.dataset.i18nAlt];
+    if (value) img.alt = value;
+  });
+
   document.querySelectorAll("[data-i18n-aria]").forEach((element) => {
     const value = dict[element.dataset.i18nAria];
     if (value) element.setAttribute("aria-label", value);
