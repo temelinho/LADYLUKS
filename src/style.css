@@ -3244,55 +3244,29 @@ body {
   }
 }
 
-/* Homepage gallery preview */
+/* Homepage gallery uses the shared section headings and buttons. */
 .gallery-preview { padding-block: 18px 64px; }
-.home-gallery-heading {
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-  gap: 24px;
-  margin-bottom: 26px;
-}
-.home-gallery-heading > div { max-width: 650px; }
-.home-gallery-heading .page-section-title { margin-bottom: 10px; }
-.home-gallery-heading p { color: var(--text-muted); font-size: .9rem; line-height: 1.8; }
-.gallery-link {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
+.gallery-preview-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 16px;
-  min-height: 48px;
-  padding: 12px 20px;
-  border: 1px solid #bca16a;
-  border-radius: 2px;
-  color: #e3d0a6;
-  font-size: .82rem;
-  text-decoration: none;
-  transition: background .2s ease, color .2s ease;
 }
-.gallery-link svg { width: 18px; height: 18px; }
-.gallery-link:hover { background: #d8bc80; color: #19150e; }
-.gallery-link:focus-visible { outline: 2px solid #fff0cc; outline-offset: 5px; }
-.gallery-preview-grid { display: grid; gap: 16px; }
-.gallery-preview-grid { grid-template-columns: 1.4fr 1fr 1fr; }
 .gallery-preview-grid img {
   display: block;
   width: 100%;
   min-width: 0;
-  height: 280px;
+  height: 320px;
   object-fit: cover;
   border: 1px solid var(--border-gold);
-  border-radius: 3px;
+  border-radius: var(--radius-lg);
+}
+.gallery-preview .btn-back-home:focus-visible {
+  outline: 2px solid var(--gold-primary);
+  outline-offset: 5px;
 }
 @media (max-width: 680px) {
   .gallery-preview { padding-block: 12px 40px; }
-  .home-gallery-heading { align-items: flex-start; flex-direction: column; gap: 18px; margin-bottom: 20px; }
-  .home-gallery-heading p { font-size: .82rem; }
   .gallery-preview-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
   .gallery-preview-grid img { height: auto; aspect-ratio: 1; }
   .gallery-preview-grid img:first-child { grid-column: 1 / -1; aspect-ratio: 1.8; }
-}
-@media (prefers-reduced-motion: reduce) {
-  .gallery-link { transition: none; }
 }
