@@ -8,6 +8,8 @@ const CURRENCY_RATES = {
 };
 const UI_TRANSLATIONS = {
   tr: {
+    gallery_label: "GALERİ",
+    gallery_button: "Galeriye git",
     nav_gallery: "Galeri",
     gallery_title: "Salonumuzdan Kareler",
     gallery_desc: "Lady Luks Spa’nın karşılama alanını, koridorlarını ve masaj odalarını gezin.",
@@ -117,6 +119,8 @@ const UI_TRANSLATIONS = {
     menu_close: "Menüyü kapat",
   },
   en: {
+    gallery_label: "GALLERY",
+    gallery_button: "View gallery",
     nav_gallery: "Gallery",
     gallery_title: "Inside Our Salon",
     gallery_desc: "Take a look at the reception area, hallways and massage rooms of Lady Luks Spa.",
@@ -225,6 +229,8 @@ const UI_TRANSLATIONS = {
     menu_close: "Close menu",
   },
   ru: {
+    gallery_label: "ГАЛЕРЕЯ",
+    gallery_button: "Перейти в галерею",
     nav_gallery: "Галерея",
     gallery_title: "Наш салон изнутри",
     gallery_desc: "Познакомьтесь с зоной ожидания, коридорами и массажными кабинетами Lady Luks Spa.",
@@ -332,6 +338,8 @@ const UI_TRANSLATIONS = {
     menu_close: "Закрыть меню",
   },
   de: {
+    gallery_label: "GALERIE",
+    gallery_button: "Zur Galerie",
     nav_gallery: "Galerie",
     gallery_title: "Einblicke in unseren Salon",
     gallery_desc: "Entdecken Sie Empfangsbereich, Flure und Massageräume von Lady Luks Spa.",
