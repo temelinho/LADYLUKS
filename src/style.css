@@ -2962,6 +2962,7 @@ html:has(.mobile-nav-ready) { scroll-padding-top: calc(96px + env(safe-area-inse
 .editorial-links { display: flex; flex-wrap: wrap; align-items: center; gap: 18px 28px; margin-top: 25px; }
 .editorial-link { display: inline-block; margin-top: 16px; font-size: .88rem; line-height: 1.7; }
 .editorial-links .editorial-link { margin-top: 0; }
+.editorial-links .editorial-intro { min-height: 48px; text-decoration: none; }
 .editorial-links .spa-hero-book { color: #0c0a08; font-size: .85rem; font-weight: 600; text-decoration: none; }
 .faq-section { padding-bottom: 54px; }
 .faq-section details { max-width: 900px; border-bottom: 1px solid var(--border-gold); }

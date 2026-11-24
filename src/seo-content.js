@@ -1,6 +1,7 @@
 /** Visible local information shared by the existing language controls. */
 const SEO_TRANSLATIONS = {
   "tr": {
+    "seo_intro_link": "Bizi tanıyın",
     "seo_local_title": "Aydın Hasanefendi’de masaj ve spa deneyimi",
     "seo_local_intro": "Aydın’da masaj salonu ararken uygulamanın türünü, seans süresini ve ulaşımı birlikte değerlendirmek seçiminizi kolaylaştırır. Lady Luks Spa, Hasanefendi Mahallesi Gençlik Caddesi’nde klasik, medikal, soft ve aromaterapi masajı seçenekleri sunar. Dört hizmetin her biri 45 dakikalık seans olarak listelenir.",
     "seo_local_choice": "Daha yumuşak bir dokunuş için soft masajı, aromatik yağların eşlik ettiği bir deneyim için aromaterapi masajını inceleyebilirsiniz. Klasik masaj ve bölgesel odaklı medikal masaj arasındaki farkları da randevu öncesinde ekibimizle görüşebilirsiniz. Beklentilerinizi paylaşmanız, seçenekleri birlikte değerlendirmenize yardımcı olur.",
@@ -25,6 +26,7 @@ const SEO_TRANSLATIONS = {
     "seo_guide_short": "Masaj rehberi"
   },
   "en": {
+    "seo_intro_link": "Get to know us",
     "seo_local_title": "Massage and spa in Hasanefendi, Aydın",
     "seo_local_intro": "When choosing a massage in Aydın, compare the type of session, its duration and the location. Lady Luks Spa on Gençlik Caddesi in Hasanefendi offers classic, medical, soft and aromatherapy massage. Each listed session lasts 45 minutes.",
     "seo_local_choice": "Explore soft massage for a gentler touch or aromatherapy for a session accompanied by aromatic oils. You can also discuss the differences between classic and focused medical massage with our team before booking. Sharing your preferences helps you consider the options together.",
@@ -49,6 +51,7 @@ const SEO_TRANSLATIONS = {
     "seo_guide_short": "Massage guide (Turkish)"
   },
   "de": {
+    "seo_intro_link": "Lernen Sie uns kennen",
     "seo_local_title": "Massage und Spa in Hasanefendi, Aydın",
     "seo_local_intro": "Vergleichen Sie bei der Wahl einer Massage in Aydın die Anwendung, die Dauer und den Standort. Lady Luks Spa an der Gençlik Caddesi in Hasanefendi bietet klassische, medizinische, sanfte und Aromatherapie-Massagen an. Alle aufgeführten Termine dauern 45 Minuten.",
     "seo_local_choice": "Für sanftere Berührungen können Sie die Soft-Massage wählen; aromatische Öle begleiten die Aromatherapie-Massage. Besprechen Sie auch die Unterschiede zwischen klassischer und gezielter medizinischer Massage vor der Buchung mit unserem Team. Teilen Sie uns Ihre Wünsche mit.",
@@ -73,6 +76,7 @@ const SEO_TRANSLATIONS = {
     "seo_guide_short": "Massage-Ratgeber (Türkisch)"
   },
   "ru": {
+    "seo_intro_link": "Познакомьтесь с нами",
     "seo_local_title": "Массаж и спа в Hasanefendi, Айдын",
     "seo_local_intro": "Выбирая массаж в Айдыне, сравните вид процедуры, продолжительность и расположение салона. Lady Luks Spa на Gençlik Caddesi в Hasanefendi предлагает классический, медицинский, мягкий и ароматерапевтический массаж. Каждый указанный сеанс длится 45 минут.",
     "seo_local_choice": "Для более мягких прикосновений рассмотрите Soft-массаж, а для сеанса с ароматическими маслами — ароматерапевтический. Различия между классическим и направленным медицинским массажем можно обсудить с нашей командой до записи. Расскажите нам о своих предпочтениях.",
